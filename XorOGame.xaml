@@ -1,0 +1,49 @@
+﻿<Page x:Class="Final_Project_Roi.XorOGame"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:local="clr-namespace:Final_Project_Roi"
+      mc:Ignorable="d"
+      Title="XorOGame" Height="788" Width="1386">
+    <Grid  >
+        <Grid.Background>
+            <ImageBrush  ImageSource="C:\Users\Owner\source\repos\project c#\Final_Project_Roi\Image_Of_Project\Image_Bg\ImageBgOorX.jpg" />
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="52*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="10,5,10,663" Grid.ColumnSpan="2">
+            <Label Width="598" Content="Tic Tac Toe Game" FontSize="60" Height="79"/>
+        </StackPanel>
+        <StackPanel Margin="0,114,0,10" Grid.ColumnSpan="2"></StackPanel>
+        <StackPanel Margin="10,114,911,10" Grid.ColumnSpan="2"/>
+        <StackPanel Margin="357,114,109,10" Grid.ColumnSpan="2">
+            <StackPanel Height="156" Width="902"></StackPanel>
+        </StackPanel>
+
+        <!-- שינוי הכפתורים כך שלא יכילו תוכן בעת ההתחלה -->
+        <Button Name="btn7" Width="100" Height="100" Margin="35,349,315,339" Click="btn7_Click"/>
+        <Button Name="btn8" Width="100" Height="100" Margin="140,349,210,339" Click="btn8_Click"/>
+        <Button Name="btn9" Width="100" Height="100" Margin="245,349,105,339" Click="btn9_Click"/>
+        <Button Name="btn4" Width="100" Height="100" Margin="35,244,315,444" Click="btn4_Click"/>
+        <Button Name="btn5" Width="100" Height="100" Margin="140,244,210,444" Click="btn5_Click"/>
+        <Button Name="btn6" Width="100" Height="100" Margin="245,244,105,444" Click="btn6_Click"/>
+        <Button Name="btn3" Width="100" Height="100" Margin="245,139,105,549" Click="btn3_Click"/>
+        <Button Name="btn2" Width="100" Height="100" Margin="140,139,210,549" Click="btn2_Click"/>
+        <Button Name="btn1" Width="100" Height="100" Margin="35,139,315,549" Click="btn1_Click"/>
+
+        <StackPanel Margin="376,267,376,210" Grid.ColumnSpan="2">
+            <Button Width="396" Height="68" Content="New Game" Click="NewGame_Click"/>
+        </StackPanel>
+
+        <Button Content="Exit" Grid.Column="1" Margin="48,346,701,366" Click="Exit_Click"/>
+
+        <Label Name="playerX" Content="Player X: " FontSize="35" Margin="0,125,673,608" Grid.Column="1"/>
+        <Label Name="playerOScore" Content="0" FontSize="35" Grid.Column="1" Margin="161,201,641,535" Background="White"/>
+
+        <Label Name="playerO" Content="Player 0: " FontSize="35" Grid.Column="1" Margin="0,197,673,521"/>
+        <Label Name="playerXScore" Content="0" FontSize="35" Grid.Column="1" Margin="161,132,641,600" Background="White"/>
+    </Grid>
+</Page>
