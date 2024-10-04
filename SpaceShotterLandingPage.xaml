@@ -5,40 +5,78 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Final_Project_Roi"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+     
       ShowsNavigationUI="False"
       Title="SpaceShotterLandingPage">
 
     <Grid>
-        <Image Source="C:\Users\Owner\source\repos\project c#\Final_Project_Roi\Image_Of_Project\Image_Bg\Image2.jpg" Stretch="Fill"></Image >
-        <Button
- 
- 
-x:Name="Btn1"
- ClickMode="Press"
- 
- Content="click for play " 
+
+
+        
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="Purple" Offset="0.8"/>
+                <GradientStop Color="MediumPurple" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+
+        
+        <Image Source="C:\Users\Owner\source\repos\project c#\Final_Project_Roi\Image_Of_Project\Image_Bg\Bg.jpeg" Stretch="UniformToFill" HorizontalAlignment="Left"/>
+        <Image Source="C:\Users\Owner\source\repos\project c#\Final_Project_Roi\Image_Of_Project\Iamge_Of_Battle_Shoter\SpaceShotter - Copy.png" Width="120" Height="120" Margin="431,171,430,181"></Image>
+
+      
+        <TextBlock 
+        Text="SPACE SHOOTER" 
+        Foreground="White" 
+        Width="420" 
+        Height="60"  
+        FontSize="50" 
+        FontWeight="Thin" 
+        HorizontalAlignment="Center"  
+        VerticalAlignment="Top" 
+        
+        Margin="0,30,0,0"/>
+
     
-     Width="180" Height="40" 
-     HorizontalAlignment="Center" VerticalAlignment="Center" 
-     FontSize="16"
-     Background="White" 
-     Foreground="Black" 
-     BorderBrush="Black" 
-     BorderThickness="7" 
-     Padding="10"
-     FontWeight="Bold" Click="Button_Click">
+        <TextBlock 
+        Text="Welcome to the ultimate space shooter game. Get ready to fight!" 
+        Foreground="White" 
+        Width="600" 
+        FontSize="18" 
+        HorizontalAlignment="Center" 
+        VerticalAlignment="Top" 
+        Margin="0,110,0,0"
+        TextAlignment="Center"/>
+
+        
+        <Button
+        x:Name="Btn1"
+        ClickMode="Press"
+        Content="Click for Play" 
+        Width="121" Height="40" 
+        FontSize="16"
+        Background="White" 
+        Padding="10"
+        FontWeight="Bold" 
+        HorizontalAlignment="Center"
+        VerticalAlignment="Top"
+        Margin="0,331,0,0"
+        Click="Button_Click">
+
+        
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border Background="{TemplateBinding Background}"
-                 CornerRadius="10"
-                 BorderBrush="{TemplateBinding BorderBrush}"
-                 BorderThickness="{TemplateBinding BorderThickness}">
+                    CornerRadius="18"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    BorderThickness="{TemplateBinding BorderThickness}">
                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Border>
                 </ControlTemplate>
             </Button.Template>
         </Button>
-
+       
     </Grid>
+
 </Page>

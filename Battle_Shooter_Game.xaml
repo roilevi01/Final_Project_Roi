@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Final_Project_Roi"
         mc:Ignorable="d"
+          Icon="C:\Users\Owner\source\repos\project c#\Final_Project_Roi\Image_Of_Project\Iamge_Of_Battle_Shoter\player.png"
         Title="Battle_Shooter_Game" Height="615" Width="540">
+    
     <Canvas Name="MyCanvas" Focusable="True" Background="Black" KeyDown="OnKeyDown" KeyUp="OnKeyUp">
        
         <Rectangle Name="Player" Height="50 " Width="60 " Fill="Yellow" Canvas.Left="240" Canvas.Top="526" HorizontalAlignment="Center" VerticalAlignment="Top" />

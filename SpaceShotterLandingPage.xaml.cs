@@ -28,6 +28,7 @@ namespace Final_Project_Roi
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Battle_Shooter_Game battle_Shooter_Game = new Battle_Shooter_Game();
+           
             battle_Shooter_Game.Show();
             Window.GetWindow(this).Close();  
            

@@ -15,7 +15,7 @@
             <ColumnDefinition Width="52*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Margin="10,5,10,663" Grid.ColumnSpan="2">
-            <Label Width="598" Content="Tic Tac Toe Game" FontSize="60" Height="79"/>
+            <Label Width="598" Content="Tic Tac Toe Game" Foreground="White" FontSize="60" Height="79"/>
         </StackPanel>
         <StackPanel Margin="0,114,0,10" Grid.ColumnSpan="2"></StackPanel>
         <StackPanel Margin="10,114,911,10" Grid.ColumnSpan="2"/>
@@ -23,7 +23,7 @@
             <StackPanel Height="156" Width="902"></StackPanel>
         </StackPanel>
 
-        <!-- שינוי הכפתורים כך שלא יכילו תוכן בעת ההתחלה -->
+        
         <Button Name="btn7" Width="100" Height="100" Margin="35,349,315,339" Click="btn7_Click"/>
         <Button Name="btn8" Width="100" Height="100" Margin="140,349,210,339" Click="btn8_Click"/>
         <Button Name="btn9" Width="100" Height="100" Margin="245,349,105,339" Click="btn9_Click"/>
@@ -35,10 +35,11 @@
         <Button Name="btn1" Width="100" Height="100" Margin="35,139,315,549" Click="btn1_Click"/>
 
         <StackPanel Margin="376,267,376,210" Grid.ColumnSpan="2">
-            <Button Width="396" Height="68" Content="New Game" Click="NewGame_Click"/>
+            <Button Width="396" Height="68" Content="New Game" FontSize="50" FontWeight="SemiBold" Click="NewGame_Click"/>
         </StackPanel>
 
-        <Button Content="Exit" Grid.Column="1" Margin="48,346,701,366" Click="Exit_Click"/>
+        <Button Content="Exit" Grid.Column="1" FontSize="50" FontWeight="SemiBold" Margin="48,346,701,366" Click="Exit_Click"/>
+        <Button Content="Back to the games" Grid.Column="1" FontSize="18" FontWeight="SemiBold" Margin="243,346,507,366" Click="back_Click"/>
 
         <Label Name="playerX" Content="Player X: " FontSize="35" Margin="0,125,673,608" Grid.Column="1"/>
         <Label Name="playerOScore" Content="0" FontSize="35" Grid.Column="1" Margin="161,201,641,535" Background="White"/>

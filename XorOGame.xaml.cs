@@ -2,6 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using System.Windows.Navigation;
 
 namespace Final_Project_Roi
 {
@@ -30,7 +31,7 @@ namespace Final_Project_Roi
 
         void Score()
         {
-            // בדיקה אם שחקן X ניצח
+           
             if ((btn1.Content?.ToString() == "X" && btn2.Content?.ToString() == "X" && btn3.Content?.ToString() == "X") ||
                 (btn1.Content?.ToString() == "X" && btn4.Content?.ToString() == "X" && btn7.Content?.ToString() == "X") ||
                 (btn1.Content?.ToString() == "X" && btn5.Content?.ToString() == "X" && btn9.Content?.ToString() == "X") ||
@@ -46,7 +47,7 @@ namespace Final_Project_Roi
                 playerXScore.Content = (plusone + 1).ToString();
                 Enable_False();
             }
-            // בדיקה אם שחקן O ניצח
+          
             else if ((btn1.Content?.ToString() == "O" && btn2.Content?.ToString() == "O" && btn3.Content?.ToString() == "O") ||
                      (btn1.Content?.ToString() == "O" && btn4.Content?.ToString() == "O" && btn7.Content?.ToString() == "O") ||
                      (btn1.Content?.ToString() == "O" && btn5.Content?.ToString() == "O" && btn9.Content?.ToString() == "O") ||
@@ -138,6 +139,17 @@ namespace Final_Project_Roi
         private void Exit_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
+        }
+
+        private void back_Click(object sender, RoutedEventArgs e)
+        {
+          MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            Window.GetWindow(this).Close(); 
+            
+            
+
+
         }
     }
 }

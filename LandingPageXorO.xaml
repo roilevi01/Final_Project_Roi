@@ -8,6 +8,10 @@
       d:DesignHeight="450" d:DesignWidth="500"
       ShowsNavigationUI="False"
       Title="LandingPageXorO">
+    <Page.Resources>
+        <DropShadowEffect x:Key="ShadowEffect" Color="Black" BlurRadius="10" ShadowDepth="3"/>
+    </Page.Resources>
+
 
     <Grid>
         <Image Source="C:\Users\Owner\source\repos\project c#\Final_Project_Roi\Image_Of_Project\Image_Bg\ImageBgOorX.jpg" Stretch="Fill"/>
@@ -16,7 +20,27 @@
             <Image Source="C:\Users\Owner\source\repos\project c#\Final_Project_Roi\Image_Of_Project\Image_Bg\ImageBgOorX.jpg"  />
         </Viewbox>
 
-        <Button Background="Transparent" BorderThickness="0" Foreground="White" FontSize="20" FontWeight="Bold" FontStyle="Oblique" Content="Play Now" Width="200" Height="50" Margin="150,330,150,70" Click="Button_Click_1"  />
+        <Button Width="200" Height="50" Margin="150,330,150,70" Click="Button_Click_1">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="Transparent"/>
+                    <Setter Property="BorderBrush" Value="White"/>
+                    <Setter Property="BorderThickness" Value="2"/>
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="FontSize" Value="20"/>
+                    <Setter Property="FontWeight" Value="Bold"/>
+                    <Setter Property="FontStyle" Value="Oblique"/>
+                   
+                    <Setter Property="Effect" Value="{StaticResource ShadowEffect}"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="White"/>
+                            <Setter Property="Foreground" Value="Black"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <TextBlock Text="Play Now" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Button>
     </Grid>
-
 </Page>

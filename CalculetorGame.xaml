@@ -1,0 +1,106 @@
+﻿<Window x:Class="Final_Project_Roi.CalculetorGame"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+       Title="CalculetorGame" Height="420" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"  Background="#2C2C2C">
+
+     <Window.Resources>
+     <Style x:Key="CalculatorButtonStyle" TargetType="Button">
+         <Setter Property="FontSize" Value="24"/>
+         <Setter Property="Margin" Value="5"/>
+         <Setter Property="Background" Value="#3E3E3E"/>
+         <Setter Property="Foreground" Value="White"/>
+         <Setter Property="BorderThickness" Value="0"/>
+         <Setter Property="Cursor" Value="Hand"/>
+         <Setter Property="HorizontalAlignment" Value="Stretch"/>
+         <Setter Property="VerticalAlignment" Value="Stretch"/>
+         <Setter Property="Template">
+             <Setter.Value>
+                 <ControlTemplate TargetType="Button">
+                     <Border Background="{TemplateBinding Background}" CornerRadius="10">
+                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                     </Border>
+                     <ControlTemplate.Triggers>
+                         <Trigger Property="IsMouseOver" Value="True">
+                             <Setter Property="Background" Value="#505050"/>
+                         </Trigger>
+                     </ControlTemplate.Triggers>
+                 </ControlTemplate>
+             </Setter.Value>
+         </Setter>
+     </Style>
+ </Window.Resources>
+
+
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        
+        <TextBox x:Name="txtDisplay" Grid.Row="0" FontSize="36" Background="#1F1F1F" Foreground="White" 
+                 HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="80" TextAlignment="Right"
+                 IsReadOnly="True" Margin="0, 10, 0, 20" BorderThickness="0" />
+
+      
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+           
+            <Button Grid.Row="0" Grid.Column="0" Content="(" Style="{StaticResource CalculatorButtonStyle}" Click="Button_Click" />
+            <Button Grid.Row="0" Grid.Column="1" Content=")" Style="{StaticResource CalculatorButtonStyle}" Click="Button_Click" />
+            <Button Grid.Row="0" Grid.Column="2" Content="%" Style="{StaticResource CalculatorButtonStyle}" Click="Button_Click" />
+            <Button Grid.Row="0" Grid.Column="3" Content="C" Style="{StaticResource CalculatorButtonStyle}" Click="Clear_Click" />
+
+            
+            <Button Grid.Row="1" Grid.Column="0" Content="7" Style="{StaticResource CalculatorButtonStyle}" Click="Button_Click" />
+            <Button Grid.Row="1" Grid.Column="1" Content="8" Style="{StaticResource CalculatorButtonStyle}" Click="Button_Click" />
+            <Button Grid.Row="1" Grid.Column="2" Content="9" Style="{StaticResource CalculatorButtonStyle}" Click="Button_Click" />
+            <Button Grid.Row="1" Grid.Column="3" Content="/" Style="{StaticResource CalculatorButtonStyle}" Click="Button_Click" />
+
+            
+            <Button Grid.Row="2" Grid.Column="0" Content="4" Style="{StaticResource CalculatorButtonStyle}" Click="Button_Click" />
+            <Button Grid.Row="2" Grid.Column="1" Content="5" Style="{StaticResource CalculatorButtonStyle}" Click="Button_Click" />
+            <Button Grid.Row="2" Grid.Column="2" Content="6" Style="{StaticResource CalculatorButtonStyle}" Click="Button_Click" />
+            <Button Grid.Row="2" Grid.Column="3" Content="*" Style="{StaticResource CalculatorButtonStyle}" Click="Button_Click" />
+
+            
+            <Button Grid.Row="3" Grid.Column="0" Content="1" Style="{StaticResource CalculatorButtonStyle}" Click="Button_Click" />
+            <Button Grid.Row="3" Grid.Column="1" Content="2" Style="{StaticResource CalculatorButtonStyle}" Click="Button_Click" />
+            <Button Grid.Row="3" Grid.Column="2" Content="3" Style="{StaticResource CalculatorButtonStyle}" Click="Button_Click" />
+            <Button Grid.Row="3" Grid.Column="3" Content="-" Style="{StaticResource CalculatorButtonStyle}" Click="Button_Click" />
+
+            
+            <Button Grid.Row="4" Grid.Column="0" Content="0" Style="{StaticResource CalculatorButtonStyle}" Click="Button_Click" />
+            <Button Grid.Row="4" Grid.Column="1" Content="." Style="{StaticResource CalculatorButtonStyle}" Click="Button_Click" />
+            <Button Grid.Row="4" Grid.Column="2" Content="√" Style="{StaticResource CalculatorButtonStyle}" Click="SquareRoot_Click" />
+            <Button Grid.Row="4" Grid.Column="3" Content="+" Style="{StaticResource CalculatorButtonStyle}" Click="Button_Click" />
+
+           
+            <Button Grid.Row="5" Grid.ColumnSpan="4" Content="=" Style="{StaticResource CalculatorButtonStyle}" Click="Equals_Click" />
+        </Grid>
+    </Grid>
+
+
+
+
+</Window>
+
+
+
+    
