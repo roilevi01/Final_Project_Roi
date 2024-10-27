@@ -28,8 +28,12 @@ namespace Final_Project_Roi
 
             private void NavigateToCountryListPage(object sender, RoutedEventArgs e)
             {
+             Country country = new Country();
+            NavigationService.Navigate(country);
+           
+            
                 
-                NavigationService.Navigate(new Uri("Country.xaml", UriKind.Relative));
+               
             }
         
     }
