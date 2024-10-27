@@ -27,7 +27,9 @@ namespace Final_Project_Roi
 
         private void GoToToDoList_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("ToDoList.xaml", UriKind.Relative));
+           ToDoList toDoList = new ToDoList();
+            NavigationService.Navigate(toDoList);
+
 
 
 

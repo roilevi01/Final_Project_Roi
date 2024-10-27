@@ -21,9 +21,9 @@
         </Grid.Background>
 
 
-        
-        <Image Source="C:\Users\Owner\source\repos\project c#\Final_Project_Roi\Image_Of_Project\Image_Bg\Bg.jpeg" Stretch="UniformToFill" HorizontalAlignment="Left"/>
-        <Image Source="C:\Users\Owner\source\repos\project c#\Final_Project_Roi\Image_Of_Project\Iamge_Of_Battle_Shoter\SpaceShotter - Copy.png" Width="120" Height="120" Margin="431,171,430,181"></Image>
+
+        <Image Source="pack://application:,,,/Image_Of_Project/Image_Bg/Bg.jpeg" Stretch="UniformToFill" HorizontalAlignment="Left"/>
+        <Image Source="pack://application:,,,/Image_Of_Project/Image_Of_Battle_Shoter/SpaceShotter.png" Width="120" Height="120" Margin="431,171,430,181"></Image>
 
       
         <TextBlock 

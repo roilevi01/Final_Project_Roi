@@ -31,7 +31,7 @@
 
 
         <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\Owner\source\repos\project c#\Final_Project_Roi\Image_Of_Project\Image_Calculetor\Calcouletor_Bg.jpeg" />
+            <ImageBrush ImageSource="pack://application:,,,/Image_Of_Project/Image_Calculetor/Calcouletor_Bg.jpeg" />
         </Grid.Background>
 
 

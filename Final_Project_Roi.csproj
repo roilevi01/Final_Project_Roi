@@ -16,11 +16,28 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Image_Of_Project\CountriesImage\Countries_Images2.jpg .jpeg" />
+    <None Remove="Image_Of_Project\CountriesImage\Countries_Images2.jpg .png" />
     <None Remove="Image_Of_Project\Fonts\Chewy-Regular.ttf" />
-    <None Remove="Image_Of_Project\Iamge_Of_Battle_Shoter\GifSpaceShotter.webp" />
-    <None Remove="Image_Of_Project\Iamge_Of_Battle_Shoter\player.png" />
-    <None Remove="Image_Of_Project\Iamge_Of_Battle_Shoter\SpaceShotter.png" />
+    <None Remove="Image_Of_Project\Image_Bg\ImageBgOorX.jpg" />
+    <None Remove="Image_Of_Project\Image_Bg\Picture_Backg.jpg" />
+    <None Remove="Image_Of_Project\Image_Calculetor\Calcouletor_Bg.jpeg" />
+    <None Remove="Image_Of_Project\Image_Calculetor\Calculetor_Image2.png" />
+    <None Remove="Image_Of_Project\Image_Of_Battle_Shoter\1.png" />
+    <None Remove="Image_Of_Project\Image_Of_Battle_Shoter\2.png" />
+    <None Remove="Image_Of_Project\Image_Of_Battle_Shoter\3.png" />
+    <None Remove="Image_Of_Project\Image_Of_Battle_Shoter\4.png" />
+    <None Remove="Image_Of_Project\Image_Of_Battle_Shoter\5.png" />
+    <None Remove="Image_Of_Project\Image_Of_Battle_Shoter\GifSpaceShotter.webp" />
+    <None Remove="Image_Of_Project\Image_Of_Battle_Shoter\Image_Shoter4.jpg" />
+    <None Remove="Image_Of_Project\Image_Of_Battle_Shoter\player.png" />
+    <None Remove="Image_Of_Project\Image_Of_Battle_Shoter\purple.png" />
+    <None Remove="Image_Of_Project\Image_Of_Battle_Shoter\SpaceShotter - Copy.png" />
+    <None Remove="Image_Of_Project\Image_Of_Battle_Shoter\SpaceShotter.png" />
+    <None Remove="Image_Of_Project\Image_Bg\Bg.jpeg" />
     <None Remove="Image_Of_Project\Image_Bg\mystery_image.jpg" />
+    <None Remove="Image_Of_Project\Image_X_or_O\Photo_Of_TicTacToeGame.png" />
+    <None Remove="Image_Of_Project\Image_X_or_O\Tic_Tac_Toe_Bg.jpeg" />
     <None Remove="Image_Of_Project\SnakesandLadders\0.jpg" />
     <None Remove="Image_Of_Project\SnakesandLadders\1.jpg" />
     <None Remove="Image_Of_Project\SnakesandLadders\10.jpg" />
@@ -123,9 +140,44 @@
     <None Remove="Image_Of_Project\SnakesandLadders\99.jpg" />
     <None Remove="Image_Of_Project\SnakesandLadders\opponent.gif" />
     <None Remove="Image_Of_Project\SnakesandLadders\player.gif" />
+    <None Remove="Image_Of_Project\SnakesandLadders\Snakes and Ladders.png" />
+    <None Remove="Image_Of_Project\ToDoList\ToDoList_Image.jpeg" />
+    <None Remove="Image_Of_Project\ToDoList\ToDoList_Image.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Image_Of_Project\SnakesandLadders\90.jpg" />
+    <Resource Include="Image_Of_Project\ToDoList\ToDoList_Image.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Image_Of_Project\CountriesImage\Countries_Images2.jpg .jpeg" />
+    <Resource Include="Image_Of_Project\CountriesImage\Countries_Images2.jpg .png" />
+    <Resource Include="Image_Of_Project\Image_Bg\Bg.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Image_Of_Project\Image_Bg\ImageBgOorX.jpg" />
+    <Resource Include="Image_Of_Project\Image_Bg\Picture_Backg.jpg" />
+    <Resource Include="Image_Of_Project\Image_Calculetor\Calcouletor_Bg.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Image_Of_Project\Image_Calculetor\Calculetor_Image2.png" />
+    <Resource Include="Image_Of_Project\Image_Of_Battle_Shoter\1.png" />
+    <Resource Include="Image_Of_Project\Image_Of_Battle_Shoter\2.png" />
+    <Resource Include="Image_Of_Project\Image_Of_Battle_Shoter\3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Image_Of_Project\Image_Of_Battle_Shoter\4.png" />
+    <Resource Include="Image_Of_Project\Image_Of_Battle_Shoter\5.png" />
+    <Resource Include="Image_Of_Project\Image_Of_Battle_Shoter\Image_Shoter4.jpg" />
+    <Resource Include="Image_Of_Project\Image_Of_Battle_Shoter\purple.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Image_Of_Project\Image_Of_Battle_Shoter\SpaceShotter - Copy.png" />
+    <Resource Include="Image_Of_Project\Image_X_or_O\Photo_Of_TicTacToeGame.png" />
+    <Resource Include="Image_Of_Project\Image_X_or_O\Tic_Tac_Toe_Bg.jpeg" />
+    <Resource Include="Image_Of_Project\SnakesandLadders\78.jpg" />
+    <Resource Include="Image_Of_Project\SnakesandLadders\79.jpg" />
     <Resource Include="Image_Of_Project\SnakesandLadders\80.jpg" />
   </ItemGroup>
 
@@ -142,8 +194,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Image_Of_Project\Iamge_Of_Battle_Shoter\player.png" />
-    <Resource Include="Image_Of_Project\Iamge_Of_Battle_Shoter\SpaceShotter.png" />
+    <Resource Include="Image_Of_Project\Image_Of_Battle_Shoter\player.png" />
+    <Resource Include="Image_Of_Project\Image_Of_Battle_Shoter\SpaceShotter.png" />
     <Resource Include="Image_Of_Project\SnakesandLadders\0.jpg" />
     <Resource Include="Image_Of_Project\SnakesandLadders\1.jpg" />
     <Resource Include="Image_Of_Project\SnakesandLadders\10.jpg" />
@@ -240,11 +292,8 @@
     <Resource Include="Image_Of_Project\SnakesandLadders\99.jpg" />
     <Resource Include="Image_Of_Project\SnakesandLadders\opponent.gif" />
     <Resource Include="Image_Of_Project\SnakesandLadders\player.gif" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Image_Of_Project\Image_Calculetor\" />
-    <Folder Include="Image_Of_Project\ToDoList\" />
+    <Resource Include="Image_Of_Project\SnakesandLadders\Snakes and Ladders.png" />
+    <Resource Include="Image_Of_Project\ToDoList\ToDoList_Image.png" />
   </ItemGroup>
 
   <ItemGroup>

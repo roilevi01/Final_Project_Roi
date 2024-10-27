@@ -14,10 +14,10 @@
 
 
     <Grid>
-        <Image Source="C:\Users\Owner\source\repos\project c#\Final_Project_Roi\Image_Of_Project\Image_Bg\ImageBgOorX.jpg" Stretch="Fill"/>
+        <Image Source="pack://application:,,,/Image_Of_Project/Image_Bg/ImageBgOorX.jpg" Stretch="Fill"/>
 
         <Viewbox Width="200" Height="200" Margin="150,125,150,125">
-            <Image Source="C:\Users\Owner\source\repos\project c#\Final_Project_Roi\Image_Of_Project\Image_Bg\ImageBgOorX.jpg"  />
+            <Image Source="pack://application:,,,/Image_Of_Project/Image_Bg/ImageBgOorX.jpg"  />
         </Viewbox>
 
         <Button Width="200" Height="50" Margin="150,330,150,70" Click="Button_Click_1">

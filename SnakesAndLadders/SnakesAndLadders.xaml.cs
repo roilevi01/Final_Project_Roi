@@ -115,8 +115,8 @@ namespace Final_Project_Roi
                 int a = 0; 
 
               
-                playerImage.ImageSource = new BitmapImage(new Uri("C:\\Users\\Owner\\source\\repos\\project c#\\Final_Project_Roi\\Image_Of_Project\\SnakesandLadders\\player.gif"));
-                opponentImage.ImageSource = new BitmapImage(new Uri("C:\\Users\\Owner\\source\\repos\\project c#\\Final_Project_Roi\\Image_Of_Project\\SnakesandLadders\\opponent.gif"));
+                playerImage.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Image_Of_Project/SnakesandLadders/player.gif"));
+                opponentImage.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Image_Of_Project/SnakesandLadders/opponent.gif"));
 
 
                 for (int i = 0; i < 100; i++)
@@ -126,12 +126,13 @@ namespace Final_Project_Roi
                    
                     ImageBrush tileImages = new ImageBrush();
 
-                
-                    tileImages.ImageSource = new BitmapImage(new Uri("C:\\Users\\Owner\\source\\repos\\project c#\\Final_Project_Roi\\Image_Of_Project\\SnakesandLadders\\" + images + ".jpg"));
+
+
+                tileImages.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Image_Of_Project/SnakesandLadders/" + images + ".jpg"));
 
 
 
-                    Rectangle box = new Rectangle
+                Rectangle box = new Rectangle
                     {
                         Height = 60,
                         Width = 60,

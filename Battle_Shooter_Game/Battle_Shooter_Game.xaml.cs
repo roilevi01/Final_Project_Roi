@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -46,24 +42,23 @@ namespace Final_Project_Roi
 
             MyCanvas.Focus();
 
-          
             ImageBrush bg = new ImageBrush
             {
-                ImageSource = new BitmapImage(new Uri("C:\\Users\\Owner\\source\\repos\\project c#\\Final_Project_Roi\\Image_Of_Project\\Iamge_Of_Battle_Shoter\\purple.png")),
+                ImageSource = new BitmapImage(new Uri("pack://application:,,,/Image_Of_Project/Image_Of_Battle_Shoter/purple.png")),
                 TileMode = TileMode.Tile,
                 Viewport = new Rect(0, 0, 0.15, 0.15),
                 ViewportUnits = BrushMappingMode.RelativeToBoundingBox
             };
+
             MyCanvas.Background = bg;
 
-          
             ImageBrush playerImage = new ImageBrush
             {
-                ImageSource = new BitmapImage(new Uri("C:\\Users\\Owner\\source\\repos\\project c#\\Final_Project_Roi\\Image_Of_Project\\Iamge_Of_Battle_Shoter\\player.png"))
+                ImageSource = new BitmapImage(new Uri("pack://application:,,,/Image_Of_Project/Image_Of_Battle_Shoter/player.png"))
             };
+
             Player.Fill = playerImage;
 
-           
             score = 0;
             damage = 0;
             enemySpeed = 5;
@@ -86,23 +81,19 @@ namespace Final_Project_Roi
             MovePlayer();
             HandleBulletsAndEnemies();
 
-           
             foreach (Rectangle i in itemRemover)
             {
                 MyCanvas.Children.Remove(i);
             }
 
-         
             if (score > 5)
             {
                 limit = 20;
                 enemySpeed = 7;
             }
 
-           
             if (damage > 99)
             {
-               
                 EndGame();
             }
         }
@@ -177,7 +168,6 @@ namespace Final_Project_Roi
             damageText.Content = "Damage: 100";
             damageText.Foreground = Brushes.Red;
 
-           
             MessageBoxResult result = MessageBox.Show(
                 $"Captain, you have destroyed {score} alien ships.\nPress OK to play again or Cancel to go back to the Game Center.",
                 "Game Over",
@@ -187,18 +177,16 @@ namespace Final_Project_Roi
 
             if (result == MessageBoxResult.OK)
             {
-                StartGame(); 
+                StartGame();
             }
             else
             {
-              
                 NavigateToGameCenter();
             }
         }
 
         private void NavigateToGameCenter()
         {
-            
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             Window.GetWindow(this).Close();
@@ -240,19 +228,19 @@ namespace Final_Project_Roi
             switch (enemySpriteCounter)
             {
                 case 1:
-                    enemySprite.ImageSource = new BitmapImage(new Uri("C:\\Users\\Owner\\source\\repos\\project c#\\Final_Project_Roi\\Image_Of_Project\\Iamge_Of_Battle_Shoter\\1.png"));
+                    enemySprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Image_Of_Project/Image_Of_Battle_Shoter/1.png"));
                     break;
                 case 2:
-                    enemySprite.ImageSource = new BitmapImage(new Uri("C:\\Users\\Owner\\source\\repos\\project c#\\Final_Project_Roi\\Image_Of_Project\\Iamge_Of_Battle_Shoter\\2.png"));
+                    enemySprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Image_Of_Project/Image_Of_Battle_Shoter/2.png"));
                     break;
                 case 3:
-                    enemySprite.ImageSource = new BitmapImage(new Uri("C:\\Users\\Owner\\source\\repos\\project c#\\Final_Project_Roi\\Image_Of_Project\\Iamge_Of_Battle_Shoter\\3.png"));
+                    enemySprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Image_Of_Project/Image_Of_Battle_Shoter/3.png"));
                     break;
                 case 4:
-                    enemySprite.ImageSource = new BitmapImage(new Uri("C:\\Users\\Owner\\source\\repos\\project c#\\Final_Project_Roi\\Image_Of_Project\\Iamge_Of_Battle_Shoter\\4.png"));
+                    enemySprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Image_Of_Project/Image_Of_Battle_Shoter/4.png"));
                     break;
                 case 5:
-                    enemySprite.ImageSource = new BitmapImage(new Uri("C:\\Users\\Owner\\source\\repos\\project c#\\Final_Project_Roi\\Image_Of_Project\\Iamge_Of_Battle_Shoter\\5.png"));
+                    enemySprite.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Image_Of_Project/Image_Of_Battle_Shoter/5.png"));
                     break;
             }
             Rectangle newEnemy = new Rectangle
@@ -264,6 +252,7 @@ namespace Final_Project_Roi
             };
             Canvas.SetTop(newEnemy, -100);
             Canvas.SetLeft(newEnemy, rand.Next(30, 430));
+
             MyCanvas.Children.Add(newEnemy);
         }
     }

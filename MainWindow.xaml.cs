@@ -23,7 +23,7 @@ namespace Final_Project_Roi
       
 
             ImageBrush myImage= new ImageBrush();
-            myImage.ImageSource = new BitmapImage(new Uri("C:\\Users\\Owner\\source\\repos\\project c#\\Final_Project_Roi\\Image_Of_Project\\Image_Bg\\Picture_Backg.jpg"));
+            myImage.ImageSource = new BitmapImage(new Uri("pack://application:,,,/Image_Of_Project/Image_Bg/Picture_Backg.jpg"));
             myImage.Stretch = Stretch.Fill;
             this.Background = myImage;
         }

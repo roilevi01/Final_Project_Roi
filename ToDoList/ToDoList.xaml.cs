@@ -39,6 +39,11 @@ namespace Final_Project_Roi
                 if (_selectedToDoItem != value)
                 {
                     _selectedToDoItem = value;
+                    if (_selectedToDoItem != null)
+                    {
+
+                        NewTask = _selectedToDoItem.Task;
+                    }
                     OnPropertyChanged();
                     UpdateCheckBoxState();
                 }
@@ -130,7 +135,8 @@ namespace Final_Project_Roi
         {
             if (SelectedToDoItem != null && !string.IsNullOrWhiteSpace(NewTask))
             {
-                SelectedToDoItem.Task = $"{SelectedToDoItem.Index}. {NewTask}";
+
+                SelectedToDoItem.Task = NewTask;
                 OnPropertyChanged(nameof(ToDoItems));
             }
         }
@@ -232,3 +238,4 @@ namespace Final_Project_Roi
         }
     }
 }
+
